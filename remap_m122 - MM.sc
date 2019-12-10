@@ -8,34 +8,16 @@ macroblock
     BREAK LALT
     POP_ALL_META
  endmacro
-
-#Sets EXTRA_F10 to  CTRL + C
- macro EXTRA_F10
+ 
+#Sets Extra_F2 to Windows (LGUI)+E (Windows Explorer)
+ macro EXTRA_F2
     PUSH_META CLEAR_META all
-    MAKE LCTRL
-    PRESS C
-    BREAK LCTRL
+    MAKE LGUI
+    PRESS E
+    BREAK LGUI
     POP_ALL_META
  endmacro
-
-#Sets EXTRA_F8 to CTRL+ V
- macro EXTRA_F8
-    PUSH_META CLEAR_META all
-    MAKE LCTRL
-    PRESS V
-    BREAK LCTRL
-    POP_ALL_META
- endmacro
-
-#Sets Extra_F7 to CTRL+ X
- macro EXTRA_F7
-    PUSH_META CLEAR_META all
-    MAKE LCTRL
-    PRESS X
-    BREAK LCTRL
-    POP_ALL_META
- endmacro
-
+ 
 #Sets Extra_F3 to CTRL+ LEFT (Word left)
  macro EXTRA_F3
     PUSH_META CLEAR_META all
@@ -44,7 +26,7 @@ macroblock
     BREAK LCTRL
     POP_ALL_META
  endmacro
-
+ 
 #Sets Extra_F4 to CTRL+ RIGHT (Word right)
  macro EXTRA_F4
     PUSH_META CLEAR_META all
@@ -54,14 +36,42 @@ macroblock
     POP_ALL_META
  endmacro
  
-#Sets Extra_F2 to Windows (LGUI)+E (Windows Explorer)
- macro EXTRA_F2
+#Sets Extra_F6 to Windows (LGUI)+TAB (Task View: Windows logo key  + Tab)
+ macro EXTRA_F6
     PUSH_META CLEAR_META all
     MAKE LGUI
-    PRESS E
+    PRESS TAB
+    BREAK LGUI
+    POP_ALL_META
+ endmacro
+  
+#Sets Extra_F7 to CTRL+ X
+ macro EXTRA_F7
+    PUSH_META CLEAR_META all
+    MAKE LCTRL
+    PRESS X
     BREAK LCTRL
     POP_ALL_META
  endmacro
+ 
+#Sets EXTRA_F8 to CTRL+ V
+ macro EXTRA_F8
+    PUSH_META CLEAR_META all
+    MAKE LCTRL
+    PRESS V
+    BREAK LCTRL
+    POP_ALL_META
+ endmacro
+ 
+#Sets EXTRA_F10 to  CTRL + C
+ macro EXTRA_F10
+    PUSH_META CLEAR_META all
+    MAKE LCTRL
+    PRESS C
+    BREAK LCTRL
+    POP_ALL_META
+ endmacro
+
  
 endblock
 
@@ -72,8 +82,6 @@ remapblock
   
   EXTRA_F1      ESC
    
-  EXTRA_F6      CAPS_LOCK
-
   EXTRA_F9 	    LGUI				 	
 
 
