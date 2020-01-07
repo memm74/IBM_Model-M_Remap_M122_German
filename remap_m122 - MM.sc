@@ -1,15 +1,6 @@
 macroblock
-
-#sets F21 to ALT PRINTSCREEN
- macro F21
-    PUSH_META CLEAR_META all
-    MAKE LALT
-    PRESS PRINTSCREEN
-    BREAK LALT
-    POP_ALL_META
- endmacro
  
-#Sets Extra_F2 to Windows (LGUI)+E (Windows Explorer)
+#Sets Extra_F2 to Windows (LGUI)+E (Windows Explorer) ("Expl")
  macro EXTRA_F2
     PUSH_META CLEAR_META all
     MAKE LGUI
@@ -18,7 +9,7 @@ macroblock
     POP_ALL_META
  endmacro
  
-#Sets Extra_F3 to CTRL+ LEFT (Word left)
+#Sets Extra_F3 to CTRL+ LEFT (Word left) ("Links")
  macro EXTRA_F3
     PUSH_META CLEAR_META all
     MAKE LCTRL
@@ -27,7 +18,7 @@ macroblock
     POP_ALL_META
  endmacro
  
-#Sets Extra_F4 to CTRL+ RIGHT (Word right)
+#Sets Extra_F4 to CTRL+ RIGHT (Word right) ("Rechts")
  macro EXTRA_F4
     PUSH_META CLEAR_META all
     MAKE LCTRL
@@ -36,7 +27,7 @@ macroblock
     POP_ALL_META
  endmacro
  
-#Sets Extra_F6 to Windows (LGUI)+TAB (Task View: Windows logo key  + Tab)
+#Sets Extra_F6 to Windows (LGUI)+TAB (Task View: Windows logo key  + Tab) ("Aktive Anwendungen")
  macro EXTRA_F6
     PUSH_META CLEAR_META all
     MAKE LGUI
@@ -72,6 +63,48 @@ macroblock
     POP_ALL_META
  endmacro
 
+#Sets F13 to Pound Sign ALT + 0163
+ macro F13
+    PUSH_META CLEAR_META all
+	MAKE LALT
+	PRESS PAD_0
+	PRESS PAD_1
+	PRESS PAD_6
+	PRESS PAD_3
+    BREAK LALT
+    POP_ALL_META
+ endmacro
+
+#Sets F14 to  CTRL + F
+ macro F14
+    PUSH_META CLEAR_META all
+    MAKE LCTRL
+    PRESS F
+    BREAK LCTRL
+    POP_ALL_META
+ endmacro
+ 
+ #Sets F15 to Interrobang ALT + 8253 (if font supports)
+ macro F15
+    PUSH_META CLEAR_META all
+	MAKE LALT
+	PRESS PAD_8
+	PRESS PAD_2
+	PRESS PAD_5
+	PRESS PAD_3
+    BREAK LALT
+    POP_ALL_META
+ endmacro
+ 
+ 
+#sets F21 to ALT PRINTSCREEN ("Druck")
+ macro F21
+    PUSH_META CLEAR_META all
+    MAKE LALT
+    PRESS PRINTSCREEN
+    BREAK LALT
+    POP_ALL_META
+ endmacro
  
 endblock
 
@@ -89,9 +122,6 @@ remapblock
   EUROPE_1    BACKSLASH
 
 # Top-side extra function keys.
-  F13           MEDIA_VOLUME_UP
-  F14           MEDIA_VOLUME_DOWN
-  F15           MEDIA_MUTE
   F16           MEDIA_MUTE
   F17           MEDIA_PLAY_PAUSE
   F18           MEDIA_PREV_TRACK
