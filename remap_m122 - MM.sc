@@ -62,9 +62,18 @@ macroblock
     BREAK LCTRL
     POP_ALL_META
  endmacro
-
-#Sets F13 to Pound Sign ALT + 0163
+ 
+#Sets F13 to  CTRL + F
  macro F13
+    PUSH_META CLEAR_META all
+    MAKE LCTRL
+    PRESS F
+    BREAK LCTRL
+    POP_ALL_META
+ endmacro
+ 
+#Sets F17 to Pound Sign ALT + 0163
+ macro F17
     PUSH_META CLEAR_META all
 	MAKE LALT
 	PRESS PAD_0
@@ -74,18 +83,9 @@ macroblock
     BREAK LALT
     POP_ALL_META
  endmacro
-
-#Sets F14 to  CTRL + F
- macro F14
-    PUSH_META CLEAR_META all
-    MAKE LCTRL
-    PRESS F
-    BREAK LCTRL
-    POP_ALL_META
- endmacro
  
- #Sets F15 to Interrobang ALT + 8253 (if font supports)
- macro F15
+#Sets F18 to Interrobang ALT + 8253 (if font supports)
+ macro F18
     PUSH_META CLEAR_META all
 	MAKE LALT
 	PRESS PAD_8
@@ -95,7 +95,7 @@ macroblock
     BREAK LALT
     POP_ALL_META
  endmacro
- 
+
  
 #sets F21 to ALT PRINTSCREEN ("Druck")
  macro F21
@@ -123,8 +123,6 @@ remapblock
 
 # Top-side extra function keys.
   F16           MEDIA_MUTE
-  F17           MEDIA_PLAY_PAUSE
-  F18           MEDIA_PREV_TRACK
   F19           MEDIA_NEXT_TRACK
   F20           MEDIA_STOP
   F22           PRINTSCREEN 
