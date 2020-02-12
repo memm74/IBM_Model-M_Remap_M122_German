@@ -26,7 +26,16 @@ macroblock
     BREAK LCTRL
     POP_ALL_META
  endmacro
- 
+
+#sets Extra_F5 to ALT PRINTSCREEN ("Druck") as key is prelabelled Druck
+ macro Extra_F5 
+    PUSH_META CLEAR_META all
+    MAKE LALT
+    PRESS PRINTSCREEN
+    BREAK LALT
+    POP_ALL_META
+ endmacro
+
 #Sets Extra_F6 to Windows (LGUI)+TAB (Task View: Windows logo key  + Tab) ("Aktive Anwendungen")
  macro EXTRA_F6
     PUSH_META CLEAR_META all
@@ -96,16 +105,6 @@ macroblock
     POP_ALL_META
  endmacro
 
- 
-#sets F21 to ALT PRINTSCREEN ("Druck")
- macro F21
-    PUSH_META CLEAR_META all
-    MAKE LALT
-    PRESS PRINTSCREEN
-    BREAK LALT
-    POP_ALL_META
- endmacro
- 
 endblock
 
 
@@ -113,21 +112,21 @@ remapblock
 
 # Left-side function keys.
   
-  EXTRA_F1      ESC
-   
-  EXTRA_F9 	    LGUI				 	
+  EXTRA_F1      ESC  
+  EXTRA_F9 	LGUI				 	
 
 
 # ISO FIX
   EUROPE_1    BACKSLASH
 
 # Top-side extra function keys.
+  F15		PAUSE
   F16           MEDIA_MUTE
   F19           MEDIA_NEXT_TRACK
   F20           MEDIA_STOP
   F22           PRINTSCREEN 
   F23           SCROLL_LOCK
-  F24           PAUSE
+
 
 # Navigation cluster
   LANG_4        DOWN
