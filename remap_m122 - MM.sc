@@ -9,22 +9,20 @@ macroblock
     POP_ALL_META
  endmacro
  
-#Sets Extra_F3 to CTRL+ LEFT (Word left) ("Links")
+#Sets Extra_F3 to CTRL+ LEFT (Word left) ("Links") 
+#no push / pop so that words can be selected etc
  macro EXTRA_F3
-    PUSH_META CLEAR_META all
     MAKE LCTRL
     PRESS LEFT
     BREAK LCTRL
-    POP_ALL_META
  endmacro
  
 #Sets Extra_F4 to CTRL+ RIGHT (Word right) ("Rechts")
+#no push / pop so that words can be selected etc
  macro EXTRA_F4
-    PUSH_META CLEAR_META all
     MAKE LCTRL
     PRESS RIGHT
     BREAK LCTRL
-    POP_ALL_META
  endmacro
 
 #sets Extra_F5 to ALT PRINTSCREEN ("Druck") as key is prelabelled Druck
